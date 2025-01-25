@@ -42,13 +42,14 @@ function saveName() {
             : affirmations.filter(a => a.category === selectedCategory);
 
             if (filteredAffirmations.length === 0) {
-                affirmationBox.textContent = "No affirmations available for this category";
-             
+                affirmationBox.innerText =  `${name}, "No affirmations available for this category`;
+            }  else {
              const randomIndex = Math.floor(Math.random() * filteredAffirmations.length);
             affirmationBox.innerText = `${name}, filteredAffirmations[randomIndex].message}`;
-        }  else {
-            affirmationBox.innerText = `${name}, Have a great day on purpose!`;
- });        
+            }
+        });    
+       
+            
          
 
 
