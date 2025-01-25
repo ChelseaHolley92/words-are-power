@@ -8,8 +8,24 @@ const affirmations = [
     { text: "You are a money magnet.", category: "career" },
     { text: "You are loved.", category: "love" },
     { text: "You are appreciated.", category: "love" }
-    
+
 ];   
+function saveName() {
+    const nameInput = document.getElementById('userName').value.trim();
+    if (nameInput !== "") {
+        localStorage.setItem('userName', nameInput);
+        updateAffirmation();
+    } else {
+        alert("Please enter your name");
+    }
+}
+    
+    function updateAffirmation() {
+        let name = localStorage.getItem('userName') || "You";
+        let affirmationBox = document.getElementById('affirmation-box');
+        affirmationBox.innerText = '${name}, your daily affirmation will appear here.';
+    }
+
 
     const button = document.getElementById('new-affirmation');
     const affirmationBox = document.getElementById('affirmation-box');
