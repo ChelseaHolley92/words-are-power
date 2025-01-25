@@ -46,8 +46,8 @@ function saveName() {
                 return;
             }  else {
              const randomIndex = Math.floor(Math.random() * filteredAffirmations.length);
-            affirmationBox.textContent = `${name}, filteredAffirmations[randomIndex].text`;
-            }
+            affirmationBox.textContent =  filteredAffirmations[randomIndex].text;
+            
         });    
        
             
