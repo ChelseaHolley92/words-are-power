@@ -16,7 +16,7 @@ function saveName() {
         localStorage.setItem('userName', nameInput);
         updateAffirmation();
     } else {
-        alert("Please enter your name");
+        alert("Please enter your name.");
     }
 }
     
