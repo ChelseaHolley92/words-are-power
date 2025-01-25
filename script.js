@@ -42,12 +42,11 @@ function saveName() {
             : affirmations.filter(a => a.category === selectedCategory);
 
             if (filteredAffirmations.length === 0) {
-                affirmationBox.innerText =  `${name}, No affirmations available for this category`;
+                affirmationBox.textContent =  `${name}, No affirmations available for this category`;
                 return;
-
             }  else {
              const randomIndex = Math.floor(Math.random() * filteredAffirmations.length);
-            affirmationBox.innerText = `${name}, $filteredAffirmations[randomIndex].text}`;
+            affirmationBox.textContent = `${name}, filteredAffirmations[randomIndex].text`;
             }
         });    
        
