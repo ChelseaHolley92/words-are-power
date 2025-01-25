@@ -47,7 +47,7 @@ function saveName() {
 
             }  else {
              const randomIndex = Math.floor(Math.random() * filteredAffirmations.length);
-            affirmationBox.innerText = `${name}, $filteredAffirmations[randomIndex].message}`;
+            affirmationBox.innerText = `${name}, $filteredAffirmations[randomIndex].text}`;
             }
         });    
        
