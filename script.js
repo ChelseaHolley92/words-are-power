@@ -23,7 +23,7 @@ function saveName() {
     function updateAffirmation() {
         let name = localStorage.getItem('userName') || "You";
         let affirmationBox = document.getElementById('affirmation-box');
-        affirmationBox.innerText = '${name}, your daily affirmation will appear here.';
+        affirmationBox.innerText = `${name}, your daily affirmation will appear here.`;
     }
 
     window.onload = updateAffirmation;
