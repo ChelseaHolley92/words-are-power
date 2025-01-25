@@ -44,10 +44,10 @@ function saveName() {
             if (filteredAffirmations.length === 0) {
                 affirmationBox.innerText =  `${name}, "No affirmations available for this category`;
                 return;
-                
+
             }  else {
              const randomIndex = Math.floor(Math.random() * filteredAffirmations.length);
-            affirmationBox.innerText = `${name}, filteredAffirmations[randomIndex].message}`;
+            affirmationBox.innerText = `${name}, $filteredAffirmations[randomIndex].message}`;
             }
         });    
        
