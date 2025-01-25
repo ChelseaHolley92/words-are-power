@@ -3,7 +3,12 @@ const affirmations = [
     { text: "Gratitude brings abundance.", category: "gratitude" },
     { text: "Every step forward is progress.", category: "motivation" },
     { text: "Your potential is endless.", category: "confidence" },
-    { text: "Kindness creates harmony.", category: "motivation" }
+    { text: "Kindness creates harmony.", category: "motivation" },
+    { text: "You will be successful.", category: "career" },
+    { text: "You are a money magnet.", category: "career" },
+    { text: "You are loved.", category: "love" },
+    { text: "You are appreciated.", category: "love" }
+    
 ];   
 
     const button = document.getElementById('new-affirmation');
