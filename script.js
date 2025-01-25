@@ -33,8 +33,9 @@ function saveName() {
     const affirmationBox = document.getElementById('affirmation-box');
     const categoryDropdown = document.getElementById('category');
 
-    button.addEventListener('click', () => {
+        button.addEventListener('click', () => {
         const selectedCategory = categoryDropdown.value;
+        let name = localStorage.getItem('userName') || "You";
 
         const filteredAffirmations = selectedCategory === 'all'
              ? affirmations
@@ -42,11 +43,11 @@ function saveName() {
 
             if (filteredAffirmations.length === 0) {
                 affirmationBox.textContent = "No affirmations available for this category";
-                return;
-            } 
-            
-            const randomIndex = Math.floor(Math.random() * filteredAffirmations.length);
-            affirmationBox.textContent = filteredAffirmations[randomIndex].text;
+             
+             const randomIndex = Math.floor(Math.random() * filteredAffirmations.length);
+            affirmationBox.innerText = `${name}, filteredAffirmations[randomIndex].message}`;
+        }  else {
+            affirmationBox.innerText = `${name}, Have a great day on purpose!`;
  });        
          
 
