@@ -26,6 +26,7 @@ function saveName() {
         affirmationBox.innerText = '${name}, your daily affirmation will appear here.';
     }
 
+    window.onload = updateAffirmation;
 
     const button = document.getElementById('new-affirmation');
     const affirmationBox = document.getElementById('affirmation-box');
