@@ -42,7 +42,7 @@ function saveName() {
             : affirmations.filter(a => a.category === selectedCategory);
 
             if (filteredAffirmations.length === 0) {
-                affirmationBox.innerText =  `${name}, "No affirmations available for this category`;
+                affirmationBox.innerText =  `${name}, No affirmations available for this category`;
                 return;
 
             }  else {
