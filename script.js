@@ -22,6 +22,7 @@ function saveName() {
     
     function updateAffirmation() {
         let name = localStorage.getItem('userName') || "You";
+        console.log("Updated name:", name);
         let affirmationBox = document.getElementById('affirmation-box');
         affirmationBox.innerText = `${name}, your daily affirmation will appear here.`;
     }
