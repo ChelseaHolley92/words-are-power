@@ -7,4 +7,5 @@ const AffirmationBox = ({ affirmation }) => {
             </div>
     );
 };
+
 export default AffirmationBox;   
